@@ -8,7 +8,26 @@
     <style>
         body{
             background-image: url(https://i.pinimg.com/originals/8e/55/40/8e55405f83edb57e51ffe4bb190d29e0.gif);
+            background-size: 1300px;
         }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(132, 249, 245);
+            text-align: center;
+        }
+        .btn-custom{
+            font-family: 'Courier New', Courier, monospace;
+            border: 3px dotted white;
+            border-radius: 20px;
+            background-color: rgb(176, 251, 254);
+            text-align: center;
+            
+        }
+        input{
+            text-align: center;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -16,8 +35,8 @@
     <!--Energy Uses-->
     <input type="text" id="Consumption" class="form-control" placeholder="typer here..."
 
-    <button class="btn btn-info" onclick="checkConsumption()"></button>
-    <button class="btn btn-info" onclick="checkConsumption()">Check</button>
+    <button class="btn btn-custom" onclick="checkConsumption()"></button>
+    <button class="btn btn-custom" onclick="checkConsumption()">Check</button>
 
     <script>
         function checkConsumption(){
