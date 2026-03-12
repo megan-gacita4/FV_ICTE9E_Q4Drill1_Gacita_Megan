@@ -21,11 +21,11 @@
         function checkConsumption(){
             var consumption = document.getElementById("Consumption").value;
 
-            if(isNaN(consumption) || consumed < 100){
-                alert("Discounted Electricity Rates.")
+            if(isNaN(consumption) || consumption < 0){
+                alert("Please input valid kwh.")
             }
 
-        else if(consumed <= 100){
+        else if(consumption >= 100 && consumption <=200){
           alert("Normal residential rate.");
         }
         else if(201 > 300){
