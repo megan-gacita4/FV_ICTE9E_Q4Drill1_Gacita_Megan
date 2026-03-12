@@ -22,17 +22,23 @@
             var consumption = document.getElementById("Consumption").value;
 
             if(isNaN(consumption) || consumption < 0){
-                alert("Please input valid kwh.")
+                alert("Please input valid kwh imnida.")
             }
 
         else if(consumption >= 100 && consumption <=200){
           alert("Normal residential rate.");
         }
-        else if(201 > 300){
+        else if(consumption >= 201 && consumption <=300){
             alert("Typical electicity usage.");
         }
+        else if(consumption >= 301 && consumption <=400){
+            alert("High electricity usage.");
+        }
+        else if(consumption >= 401 && consumption <=500){
+            alert("Heavy electricity user.");
+        }
         else{
-            alert("Please inidcate your age imnida.");
+            alert("Please type your kwh imnida.");
         }
         }    
     </script>
